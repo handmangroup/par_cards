@@ -1,5 +1,5 @@
 {
-    "name": "nubay_services/par_cards",
+    "name": "handmangroup/par_cards",
     "description": "Creates a paragraph type for card paragraphs",
     "type": "drupal-module",
     "authors": [
