@@ -1,0 +1,82 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_card.field_paragraph_card_content
+    - field.field.paragraph.paragraph_card.field_paragraph_card_extra_class
+    - field.field.paragraph.paragraph_card.field_paragraph_card_image
+    - field.field.paragraph.paragraph_card.field_paragraph_card_img_pos
+    - field.field.paragraph.paragraph_card.field_paragraph_card_padding
+    - field.field.paragraph.paragraph_card.field_paragraph_card_shadow
+    - field.field.paragraph.paragraph_card.field_paragraph_card_shadow_bg
+    - field.field.paragraph.paragraph_card.field_paragraph_card_shdw_bg_cl
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.paragraph_card
+  module:
+    - image
+    - text
+_core:
+  default_config_hash: bn3TAWgnDxTTf_uEX7tIj3ohrQclrRVv6_J6-w4E_3c
+id: paragraph.paragraph_card.default
+targetEntityType: paragraph
+bundle: paragraph_card
+mode: default
+content:
+  field_paragraph_card_content:
+    type: text_textarea
+    weight: 6
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_paragraph_card_extra_class:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_paragraph_card_image:
+    type: image_image
+    weight: 4
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings:
+      imce:
+        enabled: true
+  field_paragraph_card_img_pos:
+    type: options_select
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_paragraph_card_padding:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_paragraph_card_shadow:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_paragraph_card_shdw_bg_cl:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_paragraph_card_shadow_bg: true
+  status: true
