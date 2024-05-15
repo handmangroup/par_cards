@@ -7,6 +7,11 @@
 
 use Drupal\Core\Routing\RouteMatchInterface;
 
+function par_cards_page_attachments(array &$page) {
+  $page['#attached']['library'][] = 'par_cards/cards';
+}
+
+
 /**
  * Implements hook_theme().
  */
