@@ -1,3 +1,4 @@
+uuid: f4ceecf9-d0e7-4d9a-8afd-a62cc8dc7918
 langcode: en
 status: true
 dependencies:
@@ -6,11 +7,13 @@ dependencies:
     - paragraphs.paragraphs_type.paragraph_card
   module:
     - options
+_core:
+  default_config_hash: 3qjSFQBWedQsyEBq4V3IdkOyrkI91iN9WX5M1oA_Res
 id: paragraph.paragraph_card.field_paragraph_card_img_pos
 field_name: field_paragraph_card_img_pos
 entity_type: paragraph
 bundle: paragraph_card
-label: 'Image Position'
+label: 'Image/Icon Position'
 description: ''
 required: false
 translatable: false

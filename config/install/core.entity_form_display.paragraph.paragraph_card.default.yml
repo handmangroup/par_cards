@@ -1,29 +1,41 @@
+uuid: 35682e8c-1310-4b1b-a276-3fb1ef96eb60
 langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.paragraph_card.field_paragraph_card_btn_ex_cl
     - field.field.paragraph.paragraph_card.field_paragraph_card_content
     - field.field.paragraph.paragraph_card.field_paragraph_card_extra_class
+    - field.field.paragraph.paragraph_card.field_paragraph_card_icon
     - field.field.paragraph.paragraph_card.field_paragraph_card_image
     - field.field.paragraph.paragraph_card.field_paragraph_card_img_pos
+    - field.field.paragraph.paragraph_card.field_paragraph_card_link
     - field.field.paragraph.paragraph_card.field_paragraph_card_padding
     - field.field.paragraph.paragraph_card.field_paragraph_card_shadow
     - field.field.paragraph.paragraph_card.field_paragraph_card_shadow_bg
     - field.field.paragraph.paragraph_card.field_paragraph_card_shdw_bg_cl
+    - field.field.paragraph.paragraph_card.field_paragraph_card_title
     - image.style.thumbnail
     - paragraphs.paragraphs_type.paragraph_card
   module:
     - field_group
+    - fontawesome
     - image
     - imce
+    - link
     - text
 third_party_settings:
   field_group:
     group_card_basics:
       children:
         - field_paragraph_card_image
+        - field_paragraph_card_icon
         - field_paragraph_card_img_pos
+        - field_paragraph_card_title
         - field_paragraph_card_content
+        - field_paragraph_card_extra_class
+        - field_paragraph_card_link
+        - field_paragraph_card_btn_ex_cl
       label: 'Card Basics'
       region: content
       parent_name: ''
@@ -41,9 +53,8 @@ third_party_settings:
         - field_paragraph_card_padding
         - field_paragraph_card_shadow
         - field_paragraph_card_shdw_bg_cl
-        - field_paragraph_card_extra_class
       label: 'Card Details'
-      region: content
+      region: hidden
       parent_name: ''
       weight: 2
       format_type: details
@@ -55,15 +66,23 @@ third_party_settings:
         description: ''
         required_fields: true
 _core:
-  default_config_hash: bn3TAWgnDxTTf_uEX7tIj3ohrQclrRVv6_J6-w4E_3c
+  default_config_hash: apGWrpc8I2OSet901L50yUUih5DTtmvSIk_ALhNuHno
 id: paragraph.paragraph_card.default
 targetEntityType: paragraph
 bundle: paragraph_card
 mode: default
 content:
+  field_paragraph_card_btn_ex_cl:
+    type: string_textfield
+    weight: 12
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_paragraph_card_content:
     type: text_textarea
-    weight: 7
+    weight: 9
     region: content
     settings:
       rows: 5
@@ -77,6 +96,12 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_paragraph_card_icon:
+    type: fontawesome_icon_widget
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_paragraph_card_image:
     type: image_image
     weight: 5
@@ -89,33 +114,30 @@ content:
         enabled: true
   field_paragraph_card_img_pos:
     type: options_select
-    weight: 6
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_paragraph_card_padding:
-    type: string_textfield
     weight: 7
     region: content
-    settings:
-      size: 60
-      placeholder: '{property}{sides}-{size} [p t,b,s,e,x,y 0-5] e.g. pt-5, px-0'
-    third_party_settings: {  }
-  field_paragraph_card_shadow:
-    type: options_select
-    weight: 8
-    region: content
     settings: {  }
     third_party_settings: {  }
-  field_paragraph_card_shdw_bg_cl:
+  field_paragraph_card_link:
+    type: link_default
+    weight: 11
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_paragraph_card_title:
     type: string_textfield
-    weight: 9
+    weight: 8
     region: content
     settings:
       size: 60
-      placeholder: 'shadow, shadow-sm, shadow-lg, shadow-none'
+      placeholder: ''
     third_party_settings: {  }
 hidden:
   created: true
+  field_paragraph_card_padding: true
+  field_paragraph_card_shadow: true
   field_paragraph_card_shadow_bg: true
+  field_paragraph_card_shdw_bg_cl: true
   status: true

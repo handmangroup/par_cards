@@ -1,14 +1,17 @@
+uuid: b366449a-33b3-4629-a42a-302411a1993f
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_paragraph_card_extra_class
     - paragraphs.paragraphs_type.paragraph_card
+_core:
+  default_config_hash: b5wPAAE1sv5g4AcmqMp40acsg4bF7YMjCCyygvK1UaM
 id: paragraph.paragraph_card.field_paragraph_card_extra_class
 field_name: field_paragraph_card_extra_class
 entity_type: paragraph
 bundle: paragraph_card
-label: 'Extra Class'
+label: 'Card Extra Classes'
 description: ''
 required: false
 translatable: true
