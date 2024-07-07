@@ -276,3 +276,9 @@
     border-bottom-right-radius: var(--bs-card-inner-border-radius);
     border-bottom-left-radius: var(--bs-card-inner-border-radius);
 }
+
+.icon-wrapper {
+  vertical-align: middle;
+  height: auto;
+  max-width: 100%;
+}
