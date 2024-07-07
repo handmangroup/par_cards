@@ -1,27 +1,43 @@
+uuid: 162709fc-9c21-473e-9144-b2a3617b22b3
 langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.paragraph_card.field_paragraph_card_btn_ex_cl
     - field.field.paragraph.paragraph_card.field_paragraph_card_content
     - field.field.paragraph.paragraph_card.field_paragraph_card_extra_class
+    - field.field.paragraph.paragraph_card.field_paragraph_card_icon
     - field.field.paragraph.paragraph_card.field_paragraph_card_image
     - field.field.paragraph.paragraph_card.field_paragraph_card_img_pos
+    - field.field.paragraph.paragraph_card.field_paragraph_card_link
     - field.field.paragraph.paragraph_card.field_paragraph_card_padding
     - field.field.paragraph.paragraph_card.field_paragraph_card_shadow
     - field.field.paragraph.paragraph_card.field_paragraph_card_shadow_bg
     - field.field.paragraph.paragraph_card.field_paragraph_card_shdw_bg_cl
+    - field.field.paragraph.paragraph_card.field_paragraph_card_title
+    - image.style.6col_square
     - paragraphs.paragraphs_type.paragraph_card
   module:
+    - fontawesome
     - image
+    - link
     - options
     - text
 _core:
-  default_config_hash: r6QKGreFGb6WThy7F8M0jjb3VMbgaI9SRqrohJTjYQs
+  default_config_hash: u5BXzoFFgqt8ZOtLD_cKta_1rVTzCuq8uDy5xy8V4rw
 id: paragraph.paragraph_card.default
 targetEntityType: paragraph
 bundle: paragraph_card
 mode: default
 content:
+  field_paragraph_card_btn_ex_cl:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 10
+    region: content
   field_paragraph_card_content:
     type: text_default
     label: hidden
@@ -37,12 +53,20 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_paragraph_card_icon:
+    type: fontawesome_icon_formatter
+    label: hidden
+    settings:
+      layers: false
+    third_party_settings: {  }
+    weight: 11
+    region: content
   field_paragraph_card_image:
     type: image
     label: hidden
     settings:
       image_link: ''
-      image_style: ''
+      image_style: 6col_square
       image_loading:
         attribute: lazy
     third_party_settings: {  }
@@ -54,6 +78,18 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 4
+    region: content
+  field_paragraph_card_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 9
     region: content
   field_paragraph_card_padding:
     type: string
@@ -87,5 +123,13 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 7
+    region: content
+  field_paragraph_card_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 8
     region: content
 hidden: {  }

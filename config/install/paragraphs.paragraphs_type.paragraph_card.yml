@@ -1,3 +1,4 @@
+uuid: 9d601d7b-dacc-4e6a-a3c6-b7c324ac2f94
 langcode: en
 status: true
 dependencies:
@@ -5,12 +6,121 @@ dependencies:
     - 'file:file:d5bc26f3-3ec7-4fe3-bac3-7721b4270b8d'
   module:
     - paragraphs_library
+    - ui_styles_paragraphs
 third_party_settings:
   paragraphs_library:
     allow_library_conversion: true
+_core:
+  default_config_hash: TNa2Dbtt8IFL0XHWgtSSP8tPhjZAbWnrH04Z4b4O7QA
 id: paragraph_card
 label: Card
 icon_uuid: d5bc26f3-3ec7-4fe3-bac3-7721b4270b8d
-icon_default: 'data:image/png;base64,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'
+icon_default: 'data:image/png;base64,'
 description: ''
-behavior_plugins: {  }
+behavior_plugins:
+  ui_style_options:
+    enabled: true
+    enabled_styles:
+      background:
+        colors_background_color: colors_background_color
+        colors_background_opacity: colors_background_opacity
+      borders:
+        borders_border: borders_border
+        borders_border_color: borders_border_color
+        borders_border_opacity: borders_border_opacity
+        borders_border_radius: borders_border_radius
+        borders_border_radius_position: 0
+        borders_border_radius_width: 0
+        borders_border_subtractive: 0
+        borders_border_width: borders_border_width
+        shadows: shadows
+      display:
+        display_all: 0
+        display_print: 0
+        display_large: 0
+        display_medium: 0
+        display_small: 0
+        display_x_large: 0
+        display_xx_large: 0
+      flex:
+        flex_flex: 0
+        flex_align_content: 0
+        flex_align_items: 0
+        flex_align_self: 0
+        flex_direction: 0
+        flex_fill: 0
+        flex_grow_shrink: 0
+        flex_justify_content: 0
+        flex_order: 0
+        flex_wrap: 0
+      float:
+        clearfix: 0
+        float: 0
+      focus:
+        focus_ring: 0
+      interactions:
+        interactions_pointer_events: 0
+        interactions_text_selection: 0
+      link:
+        icon_link: 0
+        link_colored: 0
+        link_offset: 0
+        link_offset_hover: 0
+        link_opacity: 0
+        link_opacity_hover: 0
+        link_underline: 0
+        link_underline_opacity: 0
+        link_underline_opacity_hover: 0
+        stretched_link: 0
+      object_fit:
+        object_fit: 0
+      other:
+        vertical_rule: 0
+      position:
+        position_arrange_horizontal: 0
+        position_arrange_vertical: 0
+        position_center: 0
+        position: 0
+        position_position: 0
+      sizing:
+        ratio_aspect: 0
+        sizing_height: 0
+        sizing_width: 0
+      spacing:
+        spacing_horizontal_centering: 0
+        spacing_margin: spacing_margin
+        spacing_margin_bottom: spacing_margin_bottom
+        spacing_margin_end: spacing_margin_end
+        spacing_margin_start: spacing_margin_start
+        spacing_margin_top: spacing_margin_top
+        spacing_padding: spacing_padding
+        spacing_padding_bottom: spacing_padding_bottom
+        spacing_padding_end: spacing_padding_end
+        spacing_padding_start: spacing_padding_start
+        spacing_padding_top: spacing_padding_top
+        vertical_align: 0
+      text:
+        colors_color: 0
+        text_font_italics: 0
+        text_font_weight: 0
+        text_line_height: 0
+        text_font_monospace: 0
+        colors_opacity: 0
+        text_text_alignment: 0
+        text_text_decoration: 0
+        text_text_transform: 0
+        text_text_truncate: 0
+        text_text_wrapping: 0
+        typography: 0
+        text_text_word_break: 0
+      thumbnail:
+        img_thumbnail: 0
+      visibility:
+        opacity: 0
+        overflow: 0
+        overflow_horizontal: 0
+        overflow_vertical: 0
+        visibility: 0
+        visually_hidden: 0
+      z_index:
+        z-index: 0
