@@ -127,9 +127,8 @@
 
     {% elseif img_pos == 'right' %}
       <div{{ card_body_attributes.addClass(card_body_classes, 'd-flex justify-content-between') }}>
-
-        <div class="icon-wrapper order-md-2 flex-fill">{{ icon }}</div>
-        {% if img_url != '/' %} <div class="rounded-top rounded-end flex-fill order-md-2" data-image-src="{{ img_url }}"></div>{% endif %}
+        {% if icon|render %}<div class="icon-wrapper flex-fill">{{ icon }}</div>{% endif %}
+        {% if img_url != '/' %}  <img class="rounded-top rounded-start flex-fill order-md-2" src="{{ img_url }}" alt="image">{% endif %}
         <div class="title-text px-5">
           {% if content.field_paragraph_card_title|render %}
             <h4 class="card-title">{{ content.field_paragraph_card_title }}</h4>
