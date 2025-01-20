@@ -109,7 +109,7 @@
         {% endif %}
       </div>
     {% elseif img_pos == 'left' %}
-        <div{{ card_body_attributes.addClass(card_body_classes, 'd-flex justify-content-between') }}>
+        <div{{ card_body_attributes.addClass(card_body_classes, 'd-flex-md justify-content-between') }}>
         {% if icon|render %}<div class="icon-wrapper flex-fill">{{ icon }}</div>{% endif %}
         {% if img_url != '/' %}  <img class="rounded-top rounded-start flex-fill" src="{{ img_url }}" alt="image">{% endif %}
           <div class="title-text px-5">
@@ -126,19 +126,20 @@
         </div>
 
     {% elseif img_pos == 'right' %}
-      <div{{ card_body_attributes.addClass(card_body_classes, 'd-flex justify-content-between') }}>
+      <div{{ card_body_attributes.addClass(card_body_classes, 'd-flex-md justify-content-between') }}>
         {% if icon|render %}<div class="icon-wrapper flex-fill">{{ icon }}</div>{% endif %}
         {% if img_url != '/' %}  <img class="rounded-top rounded-start flex-fill order-md-2" src="{{ img_url }}" alt="image">{% endif %}
         <div class="title-text px-5">
           {% if content.field_paragraph_card_title|render %}
             <h4 class="card-title">{{ content.field_paragraph_card_title }}</h4>
           {% endif %}
+        </div>
           <div class="card-text d-flex flex-column">{{ content.field_paragraph_card_content }}
             {% if content.field_paragraph_card_link|render %}
               <div class="link"><a class="btn btn-primary {{ paragraph.field_paragraph_card_btn_ex_cl.value|render|trim }}" href="{{ content.field_paragraph_card_link.0['#url'] }}">{{ content.field_paragraph_card_link.0['#title'] }}</a></div>
             {% endif %}
           </div>
-        </div>
+      </div>
 
       </div>
     {% endif %}
