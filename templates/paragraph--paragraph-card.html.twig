@@ -133,7 +133,6 @@
           {% if content.field_paragraph_card_title|render %}
             <h4 class="card-title">{{ content.field_paragraph_card_title }}</h4>
           {% endif %}
-        </div>
           <div class="card-text d-flex flex-column">{{ content.field_paragraph_card_content }}
             {% if content.field_paragraph_card_link|render %}
               <div class="link"><a class="btn btn-primary {{ paragraph.field_paragraph_card_btn_ex_cl.value|render|trim }}" href="{{ content.field_paragraph_card_link.0['#url'] }}">{{ content.field_paragraph_card_link.0['#title'] }}</a></div>
