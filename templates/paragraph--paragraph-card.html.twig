@@ -109,7 +109,7 @@
         {% endif %}
       </div>
     {% elseif img_pos == 'left' %}
-        <div{{ card_body_attributes.addClass(card_body_classes, 'd-flex-md justify-content-between') }}>
+        <div{{ card_body_attributes.addClass(card_body_classes, 'd-md-flex justify-content-between') }}>
         {% if icon|render %}<div class="icon-wrapper flex-fill">{{ icon }}</div>{% endif %}
         {% if img_url != '/' %}  <img class="rounded-top rounded-start flex-fill" src="{{ img_url }}" alt="image">{% endif %}
           <div class="title-text px-5">
@@ -126,7 +126,7 @@
         </div>
 
     {% elseif img_pos == 'right' %}
-      <div{{ card_body_attributes.addClass(card_body_classes, 'd-flex-md justify-content-between') }}>
+      <div{{ card_body_attributes.addClass(card_body_classes, 'd-md-flex justify-content-between') }}>
         {% if icon|render %}<div class="icon-wrapper flex-fill">{{ icon }}</div>{% endif %}
         {% if img_url != '/' %}  <img class="rounded-top rounded-start flex-fill order-md-2" src="{{ img_url }}" alt="image">{% endif %}
         <div class="title-text px-5">
